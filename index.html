@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tareas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Gestión de Tareas</h1>
+        
+        <form id="taskForm">
+            <input type="text" id="descripcion" placeholder="Descripción de la tarea" required>
+            <input type="number" id="prioridad" placeholder="Prioridad" required>
+            <button type="submit">Agregar Tarea</button>
+        </form>
+
+        <div class="contenedor-tareas">
+            <div class="tareas">
+                <h2>Tareas Pendientes</h2>
+                <ul id="pendientes" class="lista-tareas"></ul>
+                <button class="btn-accion" id="empezarBtn">Empezar Tarea</button>
+            </div>
+
+            <div class="tareas">
+                <h2>Tareas en Progreso</h2>
+                <ul id="enProgreso" class="lista-tareas"></ul>
+                <button class="btn-accion" id="terminarBtn">Terminar Tarea</button>
+            </div>
+
+            <div class="tareas">
+                <h2>Tareas Completadas</h2>
+                <ul id="completadas" class="lista-tareas"></ul>
+                <button class="btn-accion" id="eliminarBtn">Eliminar Tarea</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
